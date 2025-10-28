@@ -1,63 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Atividade CSS - Aula</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      body {
-        font-family: "Inter";
-        padding: 20px;
-        background: #eee;
-      }
-
-      .card {
-        padding-left: 24px;
-        padding-right: 24px;
-        width: 624px;
-        background: #fff;
-        border-radius: 8px;
-      }
-
-      .card-body {
-        border-left: 1px solid #eee;
-        border-right: 1px solid #eee;
-        padding-top: 24px;
-        padding-bottom: 24px;
-      }
-
-      .footer {
-        padding-left: 24px;
-        padding-right: 24px;
-      }
-
-      h3 {
-        font-size: 32px;
-        font-family: "Archivo";
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <div class="card-body">
-        <img src="img/bg.png" alt="" />
-
-        <div class="footer">
-          <h3>Guia para organização e fluxo de trabalho em UI Design</h3>
-          <img src="img/logo-figma.png" alt="" />
-          <p>
-            Dicas práticas e efetivas para ganhar em produtividade e organização
-            em projetos no Figma.
-          </p>
-          <img src="img/logo-boost.png" alt="" />
-        </div>
-      </div>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simão celerado - História</title>
+  <link rel="stylesheet" href="corinthians.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1><span>A história</span> <small>está nos detalhes</small></h1>
     </div>
-  </body>
-</html>
+    <nav>
+      <a href="#">O BLOG</a>
+      <a href="#">DOWNLOADS</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>
+        <span class="quote">❝</span>
+        Simão celerado: do nascimento à morte da <span class="line">democracia (VI) – o caso Alan Gideon</span>
+      </h2>
+      <p class="author">por <strong class="name">Sérgio Trindade</strong> foi publicado em <time>16.out.2018</time> <span class="tag">10+</span></p>
+
+      <p class="content">
+        Filho de Jacinto de Souza Rojão, um dos mais queridos funcionários da Escola Federal de Educação, Ciência, Filosofia e Tecnologia do Rio das Mortes (EFEFCTRM), Alan Gideon assumiu vaga de concurso, como administrador...
+      </p>
+
+      <a href="#" class="continue">Continue lendo</a>
+
+      <hr>
+
+      <section class="categories">
+        <h3>Principais categorias</h3>
+        <div class="tags">
+          <span>CONTOS E CRÔNICAS</span>
+          <span>CANGAÇO</span>
+          <span>BRASIL</span>
+          <span>ECONOMIA</span>
+          <span>HISTÓRIA DO BRASIL</span>
+        </div>
+        <a href="#" class="see-all">Ver todas as categorias</a>
+      </section>
+    </article>
+  </main>

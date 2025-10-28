@@ -1,88 +1,165 @@
-### Práticas
+# 💻 Aula 9 — Mini-Framework Responsivo Final
 
-**Atividade 3 | ```14 / 07```**
+Nesta atividade você vai **pegar um código inicial (HTML + CSS)**, fazer uma **cópia** e **evoluir** esse código para montar uma **interface simples de blog/artigo**, igual a imagem de referência.
 
-Nesta atividade iremos trabalhar na montagem de uma página completa: Montando a Página de Tipografia.
+## 🎯 Objetivo
+Finalizar e aplicar um **mini-framework CSS** (classes utilitárias) para construir uma página **responsiva**, clara e organizada.
 
-Os principais pontos dessa atividade são:
+## 🧠 O que você vai treinar
+1. **Consolidar** classes utilitárias (tipografia, cores, espaçamentos, containers flex).  
+2. **Criar/usar** classes de responsividade (ex.: `.col-6`, `.col-12`, `.hide-mobile`).  
+3. **Documentar** o framework (comentários no CSS e um README curto).
 
-1. Separação em blocos usando a tag ```<section>```;
-2. Alinhamento de blocos no centro, como um container;
-3. Uso de Flebox para alinhar os itens.
-
-### Instruções
-
-1. **Acesse e veja** o código HTML da atividade que está na pasta ```/atv-3```.
-
-2. **Crie seu arquivo local**: Depois, crie um arquivo chamado `seunome-tipografia.html`, no seu computador. Lembre-se de criar uma pasta com o mesmo nome da atividade, pois você precisará enviar para o GSA.
-
-3. **Crie** o CSS skeleton em `style.css`, como o que tá na pasta da atividade-3 no Github.
-
-4. **Integre o arquivo CSS e HTML**, localizados na mesma pasta. Depois, com seu arquivo CSS criado, desenvolva seu código CSS e também HTML.
-
-5. **Utilize as cores** e as demais variáveis, para formatar seu projeto:
-
-   - Solicite o arquivo Figma do projeto ao professor, para ver todos os detalhes.
-
-6. **Entregue** ambos os arquivos no Google Sala de Aula (GSA).
-   - Para esta entrega, você deverá enviar a pasta inteira do projeto em um arquivo **.zip**
-   - Selecione a pasta, com o botão direito do mouse, selecione enviar para, arquivo zip (pasta compactada) e crie um arquivo com **seunome-atv-7.zip**
-   - Envie o arquivo no GSA
-  
 ---
 
-**Atividade 2**
+## 🖼️ O layout (o que a página deve ter)
+- **Header** com título do site, busca/links.  
+- **Título do artigo** bem destacado, com info do autor/data.  
+- **Trecho de texto** com link “Continuar lendo”.  
+- **Lista de categorias/tags** em chips (etiquetas).  
+- **Espaçamentos coerentes**, cores básicas (tons de **vermelho** e **cinza**) e **responsividade**.
 
-Nesta atividade você irá trabalhar com características muito parecidas com a atividade anterior. Alguns elementos deverão mudar, como:
+---
 
-1. A foto será diferente (alinhamento central, item arredondado).
-2. Há ícones de estrelas para serem adicionados como imagens, um ao lado do outro.
-3. O tamanho do botão é diferente e está alinhado ao centro.
+## 🗂️ Organização dos arquivos
+Crie/garanta esta estrutura no seu repositório (branch `bimestre-3`):
 
-Imagem de referência.
-![image](https://github.com/user-attachments/assets/983373eb-62e3-414e-a059-a97bf2f6e9bb)
+bimestre-3/
+|__Atividade 9 - Mini Framework
+   |__ index.html
+   |__ framework.css
+   |__ README.md
 
-### Instruções
 
-1. **Acesse e veja** o código HTML da atividade que está na pasta ´´´/atv-2´´´. Depois, crie um arquivo chamado `seunome-card.html`, no seu computador. Lembre-se de criar uma pasta com o mesmo nome, pois você precisará enviar para o GSA.
+---
 
-2. **Crie** o CSS skeleton em `seunome-card.css`.
+## 🛠️ Passo a passo (em sala)
 
-3. **Integre o arquivo CSS e HTML**, localizado na mesma pasta. Depois, no seu arquivo CSS criado, desenvolva seu código.
+1) **Copiar o código base**  
+   - Baixe ou clone o projeto inicial disponibilizado.  
+   - Crie a pasta **Atividade 9 - Mini Framework** e coloque os arquivos lá.
 
-4. **Utilize as cores** e as demais variáveis, para formatar seu projeto:
+2) **Abrir no VS Code**  
+   - Abra a pasta da atividade no VS Code.  
+   - Se puder, use o **Live Server** (plugin) para visualizar em tempo real.
 
-   - Cores usadas: #3B3F5C (nome, titulos e textos), #FFFFFF (cor do texto do botão) e #5D5FEF (background do botão).
-   - Medidas em 24px de `padding` entre as bordas, 32px `padding` do topo, e 16px de `margin` entre os elementos internos;
-   - Fontes (pode usar `font-family: Open Sans;`). Deve carregar do Google Fonts.
+3) **Conectar o CSS**  
+   - Garanta que o `index.html` tenha:  
+     ```html
+     <!-- o framework é seu, deu um nome melhor que framework -->
+     <link rel="stylesheet" href="framework.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     ```
 
-5. **Entregue** ambos os arquivos no Google Sala de Aula (GSA).
-   - Selecione a pasta do projeto e crie um arquivo **seunome-atv-6.zip**
-   - Envie o arquivo no GSA
+4) **Completar o HTML**  
+   Monte as seções principais (pode usar as classes utilitárias já criadas por você):  
+   - `<header>` com título + navegação.  
+   - `<main>` com `<article>`, título `<h1>`, subtítulo/autor, parágrafos e link “continuar lendo”.  
+   - Lista de **categorias** (chips) — pode ser `<ul>` com `<li>`.
 
-**Atividade 1**
+5) **Evoluir o mini-framework** (`framework.css`)  
+   - **Reset** (se necessário):  
+     ```css
+     *{box-sizing:border-box;margin:0;padding:0}
+     img{max-width:100%;display:block}
+     body{font:16px/1.6 system-ui, sans-serif; color:#374151; background:#f6f7f8;}
+     ```
 
-### Instruções
 
-1. **Acesse e Copie** o código HTML da atividade que está na pasta ´´´/atv-1´´´. Depois, crie um arquivo chamado `seunome-card.html`, no seu computador.
+   - **Utilitários de tipografia e espaçamento**:  
+     ```css
+     .h1{font-size:2rem;font-weight:800}
+     .muted{color:#6b7280}
+     .mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}
+     .mb-2{margin-bottom:.5rem}.mb-4{margin-bottom:1rem}
+     .p-2{padding:.5rem}.p-3{padding:1rem}
+     .text-center{text-align:center}
+     ```
 
-2. **Crie** o CSS skeleton em `seunome-card.css`. A partir de agora você deverá criar um arquivo de CSS separado. Para deixar mais organizado.
 
-3. **Acesse e copie o código** no arquivo CSS de exemplo, localizado na mesma pasta. Depois, no seu arquivo CSS criado, cole o código copiado.
+   - **Cores/realces**:  
+     ```css
+     .primary{color:#c62828}
+     .chip{border:1px solid #e57373;border-radius:999px;padding:.25rem .5rem;color:#c62828;background:#fff}
+     ```
 
-4. **Preencha** cada comentário de CSS com valores reais:
+   - **Layout (flex + container)**:  
+     ```css
+     .container{max-width:1100px;margin-inline:auto;padding-inline:1rem}
+     .flex{display:flex}
+     .items-center{align-items:center}
+     .between{justify-content:space-between}
+     .gap-2{gap:.5rem}
+     ```
 
-   - Cores em hexadecimal ou RGB
-   - Medidas em `px`, `%` ou `rem`
-   - Fontes (pode usar `font-family: sans-serif;`)
-   - Sombra com `box-shadow: 0 2px 6px rgba(0,0,0,0.1);`
+   - **Responsividade (mobile-first)**:  
+     ```css
+     .row{
+         display:flex;
+         flex-wrap:wrap;
+         gap:1rem
+      }
+     .col-12{flex:1 1 100%}
+     .col-6{flex:1 1 100%} /* mobile */
 
-5. **Abra** o HTML no navegador e ajuste até que o card fique visualmente igual ao exemplo:
+     @media (min-width:768px){
+       .col-6{flex:1 1 calc(50% - 1rem)}
+       .hide-mobile{display:none}
+     }
+     @media (min-width:1024px){
+       .h1{font-size:2.5rem}
+     }
+     ```
+   - **Chips/tags** (lista horizontal):  
+     ```css
+     .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+     ```
 
-   - Imagem em cima, corpo branco, cantos arredondados
-   - Título grande, subtítulo menor
-   - Parágrafo legível e botão destacado
+6) **Aplicar as classes no HTML**  
+   - Use `.container`, `.h1`, `.muted`, `.chips`, `.chip`, `.mt-*`, `.mb-*`, etc.  
+   - Ajuste margens e tamanhos até ficar parecido com a referência.
+  
 
-6. **Entregue** ambos os arquivos no Google Sala de Aula (GSA).
-   - Selecione a pasta do projeto e crie um arquivo **seunome-atv-5.zip**
-   - Envie o arquivo no GSA
+7) **Testar responsividade**  
+   - Abra o **DevTools** (F12) → modo mobile.  
+   - Verifique 375px (celular), 768px (tablet) e 1366px (desktop).  
+   - Ajuste o que “quebrar”.
+
+8) **Documentar**  
+   - No `README.md`, liste as classes criadas/alteradas e **como usar** (ex.: `.chip`, `.chips`, `.between`, `.col-6`, etc).
+
+9) **Commit e Push**  
+   - Faça commits curtos e claros (ex.: `feat(css): adiciona utilitários de chip e grid`).
+   - **Push** para a branch `bimestre-3`.
+
+10) **Entregar no Classroom**  
+   - Envie o **link da pasta** `Atividade 9 - Mini Framework`.
+
+---
+
+## Checklist de conclusão (em sala)
+- [ ] HTML com **header, article** e **categorias**  
+- [ ] `framework.css` com **utilitários** (tipografia, espaçamento, cores, flex)  
+- [ ] **Responsividade** funcionando (mobile → desktop)  
+- [ ] **README** explicando as classes
+
+---
+
+> **Meta do bimestre:** seu mini-framework será a base do **projeto final**. Quanto mais bem feito hoje, mais rápido será montar e publicar seu site responsivo.
+
+
+### Tipos mais comuns de commit
+
+| Tipo         | Significado                                                              | Exemplo                                             |
+| ------------ | ------------------------------------------------------------------------ | --------------------------------------------------- |
+| **feat**     | Nova funcionalidade                                                      | `feat(css): adiciona utilitário de margem`          |
+| **fix**      | Correção de erro ou bug                                                  | `fix(html): corrige fechamento da tag header`       |
+| **add**      | Adição simples de arquivo, imagem, fonte, etc                            | `add(img): adiciona logotipo do site`               |
+| **style**    | Alteração de estilo, espaçamento, formatação (sem alterar comportamento) | `style(css): ajusta cor e espaçamento dos botões`   |
+| **refactor** | Reescrita ou melhoria de código existente (sem mudar resultado final)    | `refactor(css): reorganiza classes utilitárias`     |
+| **docs**     | Atualização de documentação, README, comentários                         | `docs: adiciona explicação das classes no README`   |
+| **test**     | Criação ou ajuste de testes                                              | `test(js): adiciona teste para função de validação` |
+| **chore**    | Mudanças gerais no projeto (estrutura, limpeza de arquivos)              | `chore: remove arquivos temporários`                |
+| **build**    | Ajustes que afetam a compilação ou dependências                          | `build: atualiza versão do Tailwind`                |
+| **perf**     | Melhorias de desempenho                                                  | `perf(css): otimiza uso de media queries`           |
+| **ci**       | Ajustes no processo de integração contínua (GitHub Actions etc.)         | `ci: configura verificação automática de commits`   |
